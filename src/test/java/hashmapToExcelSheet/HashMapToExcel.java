@@ -21,7 +21,7 @@ public class HashMapToExcel {
 			 data.put("104", "praveen");
 			
 
-			int rowno=1;
+			int rowno=0;
 			for(Map.Entry<String, String> entry:data.entrySet()) {
 				XSSFRow row=sheet.createRow(rowno++);
 				row.createCell(0).setCellValue((String)entry.getKey());
